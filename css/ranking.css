@@ -23,10 +23,33 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button {
-  cursor: pointer;
-  background-color: #75cbe3;
+/* Estilos para o h1 dentro do header */
+header h1 {
+  font-size: 1.2em; /* Tamanho padrão */
+}
+
+/* Estilos para o botão dentro do header */
+header button {
   padding: 10px;
+  background-color: #75cbe3;
+}
+
+/* Media query para dispositivos com largura de tela menor que 600 pixels (ajuste conforme necessário) */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column; /* Empilhar itens verticalmente em dispositivos móveis */
+    align-items: flex-start; /* Alinhar itens à esquerda em dispositivos móveis */
+  }
+
+  /* Redefinir estilos para o h1 e o botão em dispositivos móveis */
+  header h1 {
+    font-size: 1em; /* Tamanho menor para dispositivos móveis */
+  }
+
+  header button {
+    width: 100%; /* Largura total do botão em dispositivos móveis */
+    margin-top: 10px; /* Adicionar espaçamento entre o h1 e o botão em dispositivos móveis */
+  }
 }
 
 .ranking-container {
